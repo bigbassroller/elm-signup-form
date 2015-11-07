@@ -1,0 +1,20 @@
+  form
+    [ id "signup-form" ]
+    [ fieldset [] [ 
+      div [ class "form-group" ] [
+        label [ class "control-label" ] [ text "Username"]
+      , input [ class "form-control", type' "text", Html.Attributes.name "username", value model.username] []
+      , span [ class "help-block" ] []
+        ] -- form-group
+      , div [ class "form-group" ] [
+        label [ class "control-label" ] [ text "Email"]
+      , input [ class "form-control", type' "text", Html.Attributes.name "email", value model.email] []
+      , span [ class "help-block" ] []
+        ]
+      , div [ class "form-group" ] [
+        label [ class "control-label" ] [ text "Password"]
+      , input [ class "form-control", type' "text", Html.Attributes.name "password", value model.password] []
+      , span [ class "help-block" ] []
+        ]
+      ]
+    ]
